@@ -1,4 +1,4 @@
-git clone git@github.com:dipakrasal2009/Docker-with-Jenkins.git
+#git clone git@github.com:dipakrasal2009/Docker-with-Jenkins.git
 cd Docker-with-Jenkins
 
-docker build -t jenkins:v1 .
+docker build -t dockerjenkins:v1 .
