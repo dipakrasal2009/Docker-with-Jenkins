@@ -3,4 +3,4 @@ cd Docker-with-Jenkins
 
 docker build -t dockerjenkins:v4 .
 
-docke rrun -dit dockerjenkins:v4
+docker run -dit dockerjenkins:v4
