@@ -1,0 +1,2 @@
+FROM redhat/ubi8
+
