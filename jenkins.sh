@@ -3,4 +3,6 @@ cd Docker-with-Jenkins
 
 docker build -t dockerjenkins:v4 .
 
-docker run -it dockerjenkins:v4
+docker run -dit dockerjenkins:v4 | cat > output.txt
+
+cat output.txt
