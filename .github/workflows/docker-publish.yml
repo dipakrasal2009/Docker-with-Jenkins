@@ -11,7 +11,8 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: dipakrasal2009/docker-with-jenkins  # Update this
+  IMAGE_NAME: dipakrasal2009/docker-image_with_github-action  # Update this
+
 
 jobs:
   build:
