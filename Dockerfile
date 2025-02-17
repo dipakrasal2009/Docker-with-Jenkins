@@ -15,8 +15,8 @@ RUN gcc first.c -o myexe
 
 
 #FROM gcc:6 as finalimage                       v1
-FROM gcr.io/distroless/cc as finalimage        
-#FROM alpine as finalimage                      v3
+#FROM gcr.io/distroless/cc as finalimage        
+FROM alpine as finalimage                      
 #FROM scratch as finalimage                     v4
 
 COPY --from=buildstage /app/myexe /myexe
