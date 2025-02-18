@@ -56,8 +56,5 @@ jobs:
      needs: build
      steps:
          - name: install cal command
-           run: |
-             apt-get install cal
-             cal 
-           
+           run: echo "both jobs are successfully completed............"
     
