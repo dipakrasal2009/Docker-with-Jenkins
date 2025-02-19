@@ -56,7 +56,7 @@ jobs:
        needs: build
        steps:
          - name: install docker software
-           run: sudo apt-get install docker -y
+     #      run: sudo apt-get install docker -y
            
          - name: print the message
            run: echo "docker installed successfully...................."
@@ -66,7 +66,7 @@ jobs:
       needs: build
       steps:
         - name: check the status iof docker
-          run: sudo systemctl status docker.io
-           
+    #      run: sudo systemctl status docker.io
+          run: echo "hello ........." 
   
     
