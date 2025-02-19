@@ -65,4 +65,10 @@ jobs:
         - name: check the status iof docker
           run: echo "hello ........." 
   
-    
+   
+  run:
+    runs-on: ubuntu-latest
+    needs: status
+    steps:
+        - name: sleept for 10 sec
+          run: echo "complete....." 
