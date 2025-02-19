@@ -56,14 +56,16 @@ jobs:
      needs: build
      steps:
          - name: print the message
-           run: echo "docker installed successfully...................."
+           run: |
+             echo "docker installed successfully...................."
+             sleep 5
            
   status:
     runs-on: ubuntu-latest
     needs: build
     steps:
         - name: check the status iof docker
-          run: echo "hello ........." 
+          run: sleep 3
   
    
   run:
@@ -71,11 +73,11 @@ jobs:
     needs: status
     steps:
         - name: sleept for 10 sec
-          run: echo "complete....."
+          run: sleep 5
 
   testing:
     runs-on: ubuntu-latest
     needs: install
     steps:
         - name: check the status iof docker
-          run: echo "hello ........."
+          run: sleep 2
