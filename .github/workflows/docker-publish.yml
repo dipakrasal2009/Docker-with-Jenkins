@@ -53,8 +53,8 @@ jobs:
           cache-to: type=gha,mode=max
   install:
      runs-on: ubuntu-latest
-     needs: build
-     steps:
+       needs: build
+       steps:
          - name: install docker software
            run: apt-get install docker -y
            
@@ -63,10 +63,10 @@ jobs:
            
   status:
     runs-on: ubuntu-latest
-    needs: build
-    steps:
-       - name: check the status iof docker
-         run: systemctl status docker.io
+      needs: build
+      steps:
+        - name: check the status iof docker
+          run: systemctl status docker.io
            
   
     
