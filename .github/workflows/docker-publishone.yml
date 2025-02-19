@@ -81,3 +81,11 @@ jobs:
     steps:
         - name: check the status iof docker
           run: sleep 2
+
+  status:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+        - name: check the status
+          run: sleep 15
+
